@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jolanta Stepanska — DaF-Lehrerin & Mentorin</title>
+  <meta name="description" content="Jolanta Stepanska – DaF-Lehrerin und Mentorin. Individueller Deutschunterricht, Mentoring und Unterstützung für Fachkräfte in Deutschland." />
+  <style>
+    :root {
+      --bg: #fafaf6;
+      --card: #ffffff;
+      --accent: #5a7b5d;
+      --muted: #666;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #fdfdfb 0%, var(--bg) 100%);
+      color: #1a1a1a;
+    }
+    .wrap { max-width: 900px; margin: 32px auto; padding: 24px; }
+    header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .left { display: flex; gap: 16px; align-items: center; }
+    .avatar {
+      width: 84px; height: 84px; border-radius: 50%;
+      background: linear-gradient(135deg, #d5e8d4, #ffffff);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: var(--accent); font-size: 28px;
+    }
+    h1 { font-size: 22px; margin: 0; }
+    .subtitle { color: var(--muted); margin-top: 6px; }
+    .slogan {
+      margin-top: 12px; padding: 10px 14px;
+      background: rgba(90,123,93,0.07);
+      display: inline-block; border-radius: 10px;
+      color: var(--accent); font-weight: 600;
+    }
+    .lang-switch { display: flex; gap: 10px; }
+    .lang-btn {
+      background: none; border: 1px solid var(--accent);
+      color: var(--accent); padding: 4px 8px; border-radius: 6px;
+      cursor: pointer; font-weight: 600; transition: 0.2s;
+    }
+    .lang-btn:hover, .lang-btn.active {
+      background: var(--accent); color: white;
+    }
+    main { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 24px; }
+    .card {
+      background: var(--card); padding: 20px; border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    h2 { color: var(--accent); margin-top: 0; }
+    p { line-height: 1.6; margin: 8px 0; }
+    ul { margin: 8px 0 0 18px; }
+    .btn {
+      display: inline-block; padding: 10px 16px; border-radius: 10px;
+      background: var(--accent); color: white; text-decoration: none;
+      font-weight: 600; margin-top: 8px;
+    }
+    footer { margin-top: 22px; color: var(--muted); font-size: 13px; text-align: center; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="left">
+        <div class="avatar">JS</div>
+        <div>
+          <h1>Jolanta Stepanska — <span data-i18n="title">DaF-Lehrerin & Mentorin</span></h1>
+          <div class="subtitle" data-i18n="subtitle">Deutsch als Fremdsprache • Mentoring für Fachkräfte</div>
+          <div class="slogan" data-i18n="slogan">Mit Herz, Humor und Tiefe Deutsch lernen.</div>
+        </div>
+      </div>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="pl">PL</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="card" data-i18n-section="about">
+        <h2 data-i18n="about_title">Über mich</h2>
+        <p data-i18n="about_text">Mit einem reichen Schatz an Erfahrung in Deutschland und einem feinen Gespür für die deutsche Kultur begleite ich Menschen auf ihrem spannenden Weg in den Beruf hierzulande. Ich unterstütze Sie sowohl in sprachlichen Belangen als auch im Umgang mit kulturellen Unterschieden. Mein Ziel besteht darin, die Eingewöhnung im beruflichen sowie im sozialen Umfeld zu erleichtern. Jede Fachkraft soll sich sicher, gut begleitet und willkommen fühlen – so fühlt man sich einfach wohl!</p>
+      </section>
+
+      <section class="card" data-i18n-section="profile">
+        <h2 data-i18n="profile_title">Profil</h2>
+        <ul>
+          <li data-i18n="profile_1">DAF-Dozentin</li>
+          <li data-i18n="profile_2">Mentorin für ausländische Fachkräfte in Deutschland</li>
+        </ul>
+
+        <h3 data-i18n="background_title">Beruflicher Background</h3>
+        <ul>
+          <li data-i18n="background_1">Bürokauffrau mit IHK-Abschluss</li>
+          <li data-i18n="background_2">Mentorin im Sozial- und Gesundheitswesen (B.A.)</li>
+        </ul>
+
+        <h3 data-i18n="cert_title">Zertifizierte Fortbildungen</h3>
+        <ul>
+          <li data-i18n="cert_1">Praxisanleitung im Sozial- und Gesundheitswesen</li>
+          <li data-i18n="cert_2">Stressmanagement-Trainerin</li>
+          <li data-i18n="cert_3">Pilates-Trainerin</li>
+          <li data-i18n="cert_4">Pädagogik</li>
+        </ul>
+
+        <h3 data-i18n="lang_title">Sprachen</h3>
+        <p data-i18n="lang_text">Polnisch, Deutsch, Englisch, Italienisch</p>
+      </section>
+
+      <section class="card" data-i18n-section="offers">
+        <h2 data-i18n="offers_title">Meine Aufgaben und Angebote</h2>
+        <ul>
+          <li data-i18n="offer_1"><strong>Individuelle Einarbeitungsbegleitung:</strong> Unterstützung bei der Orientierung in der neuen Arbeitsumgebung, Erklärung von Abläufen und Erwartungen.</li>
+          <li data-i18n="offer_2"><strong>Deutschunterricht für den Beruf:</strong> Sprachförderung mit Fokus auf Fachvokabular, Alltagssprache und Kommunikation im Team.</li>
+          <li data-i18n="offer_3"><strong>Persönliche Betreuung:</strong> Telefonisch, per Videoanruf oder E-Mail für Fragen und Unterstützung.</li>
+          <li data-i18n="offer_4"><strong>Interkulturelle Unterstützung:</strong> Vermittlung zwischen Arbeitnehmer und Arbeitgeber, Hilfe bei Kommunikation mit Kolleg*innen, Vorgesetzten und Behörden.</li>
+          <li data-i18n="offer_5"><strong>Organisatorische Hilfe:</strong> Unterstützung bei Arztterminen, Formularen, Korrespondenz und sozialen Angeboten in der Region.</li>
+        </ul>
+      </section>
+
+      <section class="card" data-i18n-section="philosophy">
+        <h2 data-i18n="philosophy_title">Mein Anspruch</h2>
+        <p data-i18n="philosophy_text">Ich bin für jede Fachkraft eine verlässliche Ansprechperson – nicht nur in sprachlichen Fragen, sondern auch bei allen Herausforderungen des Alltags in einem neuen Land. Vertrauen, Geduld und gegenseitiger Respekt stehen im Mittelpunkt meiner Arbeit.</p>
+      </section>
+
+      <section class="card" data-i18n-section="contact">
+        <h2 data-i18n="contact_title">Kontakt</h2>
+        <p><strong>Telefon:</strong> <a href="tel:+4915175017951">+49 151 75017951</a></p>
+        <p><strong>E-Mail:</strong> <a href="mailto:jolanta.online@gmail.com">jolanta.online@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jolanta-stepanska-3607b182" target="_blank">linkedin.com/in/jolanta-stepanska-3607b182</a></p>
+        <a class="btn" href="mailto:jolanta.online@gmail.com?subject=Anfrage%20Deutschunterricht" data-i18n="contact_button">Jetzt Kontakt aufnehmen</a>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Jolanta Stepanska — <span data-i18n="footer">DaF-Lehrerin & Mentorin · Mit Herz, Humor und Tiefe.</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const translations = {
+      en: {
+        title: "German Teacher & Mentor",
+        subtitle: "German as a Foreign Language • Mentoring for Professionals",
+        slogan: "Learn German with heart, humor and depth.",
+        about_title: "About Me",
+        about_text: "With rich experience in Germany and a fine sense of its culture, I guide people on their exciting journey into their careers here. I support them in language matters as well as cultural understanding. My goal is to make it easier to feel at home — at work and in everyday life.",
+        profile_title: "Profile",
+        profile_1: "Teacher of German as a Foreign Language (DaF)",
+        profile_2: "Mentor for international professionals in Germany",
+        background_title: "Professional Background",
+        background_1: "Office Clerk (IHK Certificate)",
+        background_2: "Mentor in Social and Health Care (B.A.)",
+        cert_title: "Certified Training",
+        cert_1: "Practical Instruction in Health and Social Care",
+        cert_2: "Stress Management Trainer",
+        cert_3: "Pilates Trainer",
+        cert_4: "Pedagogy",
+        lang_title: "Languages",
+        lang_text: "Polish, German, English, Italian",
+        offers_title: "My Services",
+        offer_1: "<strong>Individual Onboarding Support:</strong> Guidance in the new work environment and explanation of processes and expectations.",
+        offer_2: "<strong>German for Work:</strong> Language training focused on professional vocabulary, everyday communication, and teamwork.",
+        offer_3: "<strong>Personal Support:</strong> Available by phone, video call, or email for questions and advice.",
+        offer_4: "<strong>Intercultural Support:</strong> Mediation between employees and employers, assistance in communication with colleagues, supervisors, and authorities.",
+        offer_5: "<strong>Organizational Help:</strong> Support with appointments, paperwork, and integration into social and cultural life.",
+        philosophy_title: "My Philosophy",
+        philosophy_text: "I am a reliable contact for every professional – not only for language but also for all everyday challenges in a new country. Trust, patience and mutual respect are at the heart of my work.",
+        contact_title: "Contact",
+        contact_button: "Get in touch",
+        footer: "German Teacher & Mentor · With heart, humor and depth."
+      },
+      pl: {
+        title: "Nauczycielka niemieckiego i mentorka",
+        subtitle: "Język niemiecki jako obcy • Mentoring dla specjalistów",
+        slogan: "Ucz się niemieckiego z sercem, humorem i głębią.",
+        about_title: "O mnie",
+        about_text: "Dzięki bogatemu doświadczeniu w Niemczech i wyczuciu tamtejszej kultury wspieram osoby na ich drodze zawodowej. Pomagam zarówno w kwestiach językowych, jak i kulturowych, by ułatwić im odnalezienie się w nowym środowisku zawodowym i społecznym.",
+        profile_title: "Profil",
+        profile_1: "Lektorka języka niemieckiego (DaF)",
+        profile_2: "Mentorka zagranicznych specjalistów w Niemczech",
+        background_title: "Doświadczenie zawodowe",
+        background_1: "Pracowniczka biurowa z dyplomem IHK",
+        background_2: "Mentorka w sektorze socjalnym i zdrowotnym (licencjat)",
+        cert_title: "Certyfikowane kursy",
+        cert_1: "Instruktaż praktyczny w opiece społecznej i zdrowotnej",
+        cert_2: "Trenerka zarządzania stresem",
+        cert_3: "Instruktorka Pilates",
+        cert_4: "Pedagogika",
+        lang_title: "Języki",
+        lang_text: "Polski, niemiecki, angielski, włoski",
+        offers_title: "Moje usługi",
+        offer_1: "<strong>Indywidualne wprowadzenie do pracy:</strong> Pomoc w orientacji w nowym miejscu pracy, wyjaśnianie zasad i oczekiwań.",
+        offer_2: "<strong>Niemiecki w pracy:</strong> Nauka języka z naciskiem na słownictwo zawodowe, komunikację codzienną i współpracę w zespole.",
+        offer_3: "<strong>Wsparcie osobiste:</strong> Kontakt telefoniczny, wideo lub e-mail w razie pytań i wątpliwości.",
+        offer_4: "<strong>Wsparcie międzykulturowe:</strong> Mediacja między pracownikiem a pracodawcą, pomoc w komunikacji z współpracownikami i urzędami.",
+        offer_5: "<strong>Pomoc organizacyjna:</strong> Wsparcie przy umawianiu wizyt, wypełnianiu formularzy i poznawaniu lokalnych ofert społecznych.",
+        philosophy_title: "Moja filozofia",
+        philosophy_text: "Jestem zaufaną osobą kontaktową dla każdej specjalistki i każdego specjalisty – nie tylko w kwestiach językowych, ale także w codziennych wyzwaniach życia w nowym kraju. Zaufanie, cierpliwość i wzajemny szacunek to podstawa mojej pracy.",
+        contact_title: "Kontakt",
+        contact_button: "Napisz do mnie",
+        footer: "Nauczycielka niemieckiego i mentorka · Z sercem, humorem i głębią."
+      }
+    };
+
+    const btns = document.querySelectorAll('.lang-btn');
+    btns.forEach(btn => btn.addEventListener('click', () => {
+      const lang = btn.dataset.lang;
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (translations[lang] && translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+    }));
+  </script>
+</body>
+</html>
